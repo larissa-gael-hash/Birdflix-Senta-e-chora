@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-/** V2 - Login com link para o cadastro. Acerto leva à Home; erro à tela de erro; 3º erro à abertura. */
+/** V3 - Login com links para cadastro e recuperação de senha. Acerto leva à Home; erro à tela de erro; 3º erro à abertura. */
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsuario, etSenha;
 
@@ -27,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         btnEntrar.setOnClickListener(v -> tentarLogin());
         findViewById(R.id.tvCadastro).setOnClickListener(
                 v -> startActivity(new Intent(this, CadastroActivity.class)));
+        findViewById(R.id.tvRecuperar).setOnClickListener(
+                v -> startActivity(new Intent(this, RecuperacaoActivity.class)));
     }
 
     @Override
