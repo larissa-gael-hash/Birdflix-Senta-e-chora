@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_card"
             android:elevation="6dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -23,31 +24,15 @@
                 style="@style/EstiloTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Recuperar senha" />
+                android:text="Verificação" />
 
             <TextView
+                android:id="@+id/tvInfo"
                 style="@style/EstiloSubtitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
-                android:text="Receba um código no seu e-mail" />
-
-            <EditText
-                android:id="@+id/etEmail"
-                style="@style/EstiloCampo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="E-mail cadastrado"
-                android:inputType="textEmailAddress" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnEnviar"
-                style="@style/EstiloBotaoSecundario"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Enviar código" />
+                android:layout_marginTop="6dp"
+                android:gravity="center" />
 
             <EditText
                 android:id="@+id/etCodigo"
@@ -55,17 +40,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:hint="Código"
-                android:inputType="number" />
+                android:gravity="center"
+                android:hint="000000"
+                android:inputType="number"
+                android:letterSpacing="0.3"
+                android:maxLength="6"
+                android:textSize="26sp" />
 
-            <EditText
-                android:id="@+id/etNovaSenha"
-                style="@style/EstiloCampo"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvContagem"
+                style="@style/EstiloPilula"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:hint="Nova senha"
-                android:inputType="textPassword" />
+                android:layout_marginTop="16dp" />
 
             <TextView
                 android:id="@+id/tvMensagem"
@@ -76,20 +63,12 @@
                 android:text=" " />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnTrocar"
+                android:id="@+id/btnConfirmar"
                 style="@style/EstiloBotao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Trocar senha" />
-
-            <TextView
-                android:id="@+id/tvVoltar"
-                style="@style/EstiloLink"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Voltar ao login" />
+                android:text="Confirmar" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

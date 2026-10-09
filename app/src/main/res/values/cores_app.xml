@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_azul">#2F4FBF</color>
+    <color name="app_azul_escuro">#1E3C72</color>
+    <color name="app_fundo">#F4F6FB</color>
+    <color name="app_card">#FFFFFF</color>
+    <color name="app_texto">#1F2937</color>
+    <color name="app_texto_suave">#6B7280</color>
+    <color name="app_hint">#9CA3AF</color>
+    <color name="app_borda">#D5DCE8</color>
+    <color name="app_campo">#F1F4F9</color>
+    <color name="app_erro">#C62828</color>
+    <color name="app_pilula">#E8EDFB</color>
+    <color name="app_foto">#E3E8F2</color>
+</resources>

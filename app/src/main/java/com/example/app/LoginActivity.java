@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-/** V3 - Login com links para cadastro e recuperação de senha. Acerto leva à Home; erro à tela de erro; 3º erro à abertura. */
+/** V4 - Login com links para cadastro e recuperação de senha; login correto exige o código de verificação. Acerto leva à Home; erro à tela de erro; 3º erro à abertura. */
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsuario, etSenha;
 
@@ -43,10 +43,8 @@ public class LoginActivity extends AppCompatActivity {
         if (u != null && u.senha.equals(senha)) {
             Repositorio.erros = 0;
             Repositorio.atual = u;
-            Intent i = new Intent(this, HomeActivity.class);
-            i.putExtra("titulo", "Login realizado com sucesso!");
-            startActivity(i);
-            finish();
+            // Credenciais corretas: segue para a verificação por código (20s)
+            startActivity(new Intent(this, VerificacaoActivity.class));
         } else {
             Repositorio.erros++;
             if (Repositorio.erros >= Repositorio.MAX_ERROS) {
