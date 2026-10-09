@@ -10,22 +10,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Login"
+        android:text="Recuperar senha"
         android:textSize="26sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etUsuario"
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuário"
-        android:inputType="text" />
+        android:hint="E-mail cadastrado"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar código" />
 
     <EditText
-        android:id="@+id/etSenha"
+        android:id="@+id/etCodigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"
+        android:hint="Código"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etNovaSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nova senha"
         android:inputType="textPassword" />
 
     <TextView
@@ -37,26 +50,16 @@
         android:textColor="#C62828" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnTrocar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Entrar" />
+        android:text="Trocar senha" />
 
     <TextView
-        android:id="@+id/tvCadastro"
+        android:id="@+id/tvVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:text="Criar cadastro"
-        android:textColor="#1E50C8" />
-
-    <TextView
-        android:id="@+id/tvRecuperar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Esqueci minha senha"
+        android:padding="12dp"
+        android:text="Voltar ao login"
         android:textColor="#1E50C8" />
 </LinearLayout>
