@@ -2,23 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E3C72"
+    android:background="@drawable/bg_gradiente"
     android:gravity="center"
     android:orientation="vertical">
 
     <TextView
+        style="@style/EstiloTituloClaro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BEM-VINDO"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:text="BEM-VINDO" />
 
     <TextView
+        style="@style/EstiloSubtituloClaro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Carregando..."
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:text="Carregando..." />
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#FFFFFF" />
 </LinearLayout>

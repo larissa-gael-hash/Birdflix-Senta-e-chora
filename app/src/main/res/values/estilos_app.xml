@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TemaAutenticacao" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/app_azul</item>
+        <item name="colorPrimaryDark">@color/app_azul_escuro</item>
+        <item name="colorAccent">@color/app_azul</item>
+        <item name="android:statusBarColor">@color/app_azul_escuro</item>
+        <item name="android:windowBackground">@color/app_fundo</item>
+    </style>
+
+    <style name="EstiloTitulo" parent="">
+        <item name="android:textColor">@color/app_texto</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EstiloSubtitulo" parent="">
+        <item name="android:textColor">@color/app_texto_suave</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EstiloTituloClaro" parent="">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="EstiloSubtituloClaro" parent="">
+        <item name="android:textColor">#CCDDFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EstiloCampo" parent="">
+        <item name="android:background">@drawable/bg_campo</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/app_texto</item>
+        <item name="android:textColorHint">@color/app_hint</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EstiloBotao" parent="">
+        <item name="android:background">@drawable/bg_botao</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="EstiloBotaoSecundario" parent="">
+        <item name="android:background">@drawable/bg_botao_sec</item>
+        <item name="android:textColor">@color/app_azul</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="EstiloLink" parent="">
+        <item name="android:textColor">@color/app_azul</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EstiloMensagem" parent="">
+        <item name="android:textColor">@color/app_erro</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EstiloDado" parent="">
+        <item name="android:textColor">@color/app_texto</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EstiloPilula" parent="">
+        <item name="android:background">@drawable/bg_pilula</item>
+        <item name="android:textColor">@color/app_azul</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="EstiloTextoErro" parent="">
+        <item name="android:textColor">@color/app_erro</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
